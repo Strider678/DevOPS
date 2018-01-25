@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Sample Deployment</title>
+  <title>EPAM DevOps Demo</title>
   <style>
     body {
       color: #ffffff;
