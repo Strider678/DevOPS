@@ -3,3 +3,5 @@ os: linux
 files:
   - source: /test.html
     destination: /var/www/html/
+  - source: /index.php
+    destination: /var/www/html/
