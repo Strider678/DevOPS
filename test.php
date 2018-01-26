@@ -23,8 +23,8 @@
       margin-bottom: 0;
     }
     img {
-      height: 35%;
-      width: 35%;
+      height: 30%;
+      width: 30%;
     }
   </style>
 </head>
