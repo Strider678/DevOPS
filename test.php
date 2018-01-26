@@ -20,12 +20,17 @@
     h2 {
       font-size: 200%;
       font-weight: normal;
+      color: green;
       margin-bottom: 0;
+    }
+    img {
+      align: center;
     }
   </style>
 </head>
 <body>
   <div align="center">
+    <img src="logo.png"/>
     <h1>Congratulations!</h1>
     <h2>This application was AUTOMATICALLY deployed using AWS CodeDeploy from GitHub.</h2>
     <h1>Version 47.0</h1>
