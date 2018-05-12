@@ -9,6 +9,16 @@
       background-color: #0188cc;
       font-family: Arial, sans-serif;
       font-size: 14px;
+      animation: pulse 5s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+      background-color: #001F3F;
+      }
+      100% {
+      background-color: #FF4136;
+      }
     }
     
     h1 {
