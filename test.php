@@ -5,28 +5,30 @@
   <title>EPAM DevOps CodeDeploy Demo</title>
   <style>
     body {
-      color: #ffffff;
-      background-color: #0188cc;
+      color: #ffffff;	
       font-family: Arial, sans-serif;
       font-size: 14px;
-      animation: pulse 5s infinite;
+      animation: pulse 10s infinite;
     }
 
     @keyframes pulse {
       0% {
-      background-color: #001F3F;
+        background-color: blue;
+      }
+      50% {
+        background-color: green;
       }
       100% {
-      background-color: #FF4136;
+        background-color: blue;
       }
     }
-    
+
     h1 {
       font-size: 500%;
       font-weight: normal;
       margin-bottom: 0;
     }
-    
+
     h2 {
       font-size: 200%;
       font-weight: normal;
@@ -43,12 +45,14 @@
     <img src="logo.png"/>
     <h1>Congratulations!</h1>
     <h2>This application was AUTOMATICALLY deployed using AWS CodeDeploy from GitHub.</h2>
-    <h1>Version 47.0</h1>
+    <h1>Version 1.0</h1>
     <?php
       $id = file_get_contents("http://instance-data/latest/meta-data/instance-id");
-      $ip = file_get_contents("http://instance-data/latest/meta-data/local-ipv4");
+      $hostname = file_get_contents("http://instance-data/latest/meta-data/public-hostname");
+      $ip = file_get_contents("http://instance-data/latest/meta-data/public-ipv4);
       echo "<h2>Instance ID: ", $id, "</h2>";
-      echo "<h2>Instance IP: ", $ip, "</h2>";
+      echo "<h2>Public Hostname: ", $hostname, "</h2>";
+      echo "<h2>Public IP: ", $ip, "</h2>";
     ?>
   </div>
 </body>
