@@ -49,7 +49,7 @@
     <?php
       $id = file_get_contents("http://instance-data/latest/meta-data/instance-id");
       $hostname = file_get_contents("http://instance-data/latest/meta-data/public-hostname");
-      $ip = file_get_contents("http://instance-data/latest/meta-data/public-ipv4);
+      $ip = file_get_contents("http://instance-data/latest/meta-data/public-ipv4");
       echo "<h2>Instance ID: ", $id, "</h2>";
       echo "<h2>Public Hostname: ", $hostname, "</h2>";
       echo "<h2>Public IP: ", $ip, "</h2>";
